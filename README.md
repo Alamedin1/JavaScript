@@ -1,2 +1,2 @@
 # Typescript
-Wirenboard Typescript
+Wirenboard Typescript for Bowlton robot

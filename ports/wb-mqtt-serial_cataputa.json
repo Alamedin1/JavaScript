@@ -1,0 +1,112 @@
+{
+  "debug" : true,
+  "ports" : 
+  [
+    {
+      "address" : "192.168.0.21",
+      "connection_max_fail_cycles" : 2,
+      "connection_timeout_ms" : 5000,
+      "devices" : 
+      [
+        {
+          "device_type" : "EPR60",
+          "enabled" : true,
+          "id" : "unpacker_catapulta_motor_1",
+          "max_read_registers" : 50,
+          "name" : "unpacker_catapulta_motor_1",
+          "poll_interval" : 1,
+          "setup" : 
+          [
+            {
+              "address" : 60,
+              "title" : "setting_input_1",
+              "value" : 54
+            },
+            {
+              "address" : 61,
+              "title" : "setting_input_2",
+              "value" : 54
+            },
+            {
+              "address" : 62,
+              "title" : "setting_input_3",
+              "value" : 54
+            },
+            {
+              "address" : 63,
+              "title" : "setting_input_4",
+              "value" : 54
+            },
+            {
+              "address" : 25,
+              "title" : "current_settings",
+              "value" : 3000
+            },
+            {
+              "address" : 20,
+              "title" : "preset_mode_control",
+              "value" : 0
+            },
+            {
+              "address" : 21,
+              "title" : "motor_type_settings",
+              "value" : 0
+            },
+            {
+              "address" : 22,
+              "title" : "motor_operating_mode",
+              "value" : 0
+            }
+          ],
+          "slave_id" : "01"
+        }
+      ],
+      "enabled" : true,
+      "guard_interval_us" : 0,
+      "poll_interval" : 1,
+      "port" : 502,
+      "port_type" : "modbus tcp",
+      "response_timeout_ms" : 500
+    },
+    {
+      "baud_rate" : 9600,
+      "data_bits" : 8,
+      "devices" : [],
+      "enabled" : false,
+      "parity" : "N",
+      "path" : "/dev/ttyRS485-2",
+      "poll_interval" : 1,
+      "stop_bits" : 2
+    },
+    {
+      "baud_rate" : 9600,
+      "data_bits" : 8,
+      "devices" : [],
+      "enabled" : false,
+      "parity" : "N",
+      "path" : "/dev/ttyMOD1",
+      "poll_interval" : 1,
+      "stop_bits" : 2
+    },
+    {
+      "baud_rate" : 9600,
+      "data_bits" : 8,
+      "devices" : [],
+      "enabled" : false,
+      "parity" : "N",
+      "path" : "/dev/ttyMOD2",
+      "poll_interval" : 1,
+      "stop_bits" : 2
+    },
+    {
+      "baud_rate" : 9600,
+      "data_bits" : 8,
+      "devices" : [],
+      "enabled" : false,
+      "parity" : "N",
+      "path" : "/dev/ttyMOD3",
+      "poll_interval" : 1,
+      "stop_bits" : 2
+    }
+  ]
+}

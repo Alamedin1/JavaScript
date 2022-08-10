@@ -1,0 +1,50 @@
+{
+    "device_type": "MAN_ACTUATOR",
+    "device": {
+        "name": "MAN_ACTUATOR",
+        "id": "MAN_ACTUATOR",
+        "protocol": "modbus_io",
+        "stride": 1000,
+        "shift": 500,
+        "max_read_registers": 0,
+        "response_timeout_ms": 40,
+        "frame_timeout_ms": 8,
+        "channels": [{
+                "name": "actuator_line_1",
+                "reg_type": "coil",
+                "address": 0,
+                "type": "switch"
+            },
+            {
+                "name": "actuator_line_2",
+                "reg_type": "coil",
+                "address": 1,
+                "type": "switch"
+            },
+            {
+                "name": "actuator_line_3",
+                "reg_type": "coil",
+                "address": 2,
+                "type": "switch"
+            },
+            {
+                "name": "actuator_line_4",
+                "reg_type": "coil",
+                "address": 3,
+                "type": "switch"
+            },
+            {
+                "name": "actuator_line_5",
+                "reg_type": "coil",
+                "address": 4,
+                "type": "switch"
+            },
+            {
+                "name": "actuator_line_6",
+                "reg_type": "coil",
+                "address": 5,
+                "type": "switch"
+            }
+        ]
+    }
+}

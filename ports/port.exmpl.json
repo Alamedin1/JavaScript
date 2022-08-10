@@ -1,0 +1,78 @@
+{
+    "debug": false,
+    "ports": [{
+            "baud_rate": 9600,
+            "data_bits": 8,
+            "devices": [],
+            "enabled": true,
+            "parity": "N",
+            "path": "/dev/ttyRS485-1",
+            "poll_interval": 10,
+            "port_type": "serial",
+            "stop_bits": 2
+        },
+        {
+            "baud_rate": 9600,
+            "data_bits": 8,
+            "devices": [],
+            "enabled": true,
+            "parity": "N",
+            "path": "/dev/ttyRS485-2",
+            "poll_interval": 10,
+            "stop_bits": 2
+        },
+        {
+            "baud_rate": 9600,
+            "data_bits": 8,
+            "devices": [],
+            "enabled": false,
+            "parity": "N",
+            "path": "/dev/ttyMOD1",
+            "poll_interval": 10,
+            "stop_bits": 2
+        },
+        {
+            "baud_rate": 9600,
+            "data_bits": 8,
+            "devices": [],
+            "enabled": false,
+            "parity": "N",
+            "path": "/dev/ttyMOD2",
+            "poll_interval": 10,
+            "stop_bits": 2
+        },
+        {
+            "baud_rate": 9600,
+            "data_bits": 8,
+            "devices": [],
+            "enabled": false,
+            "parity": "N",
+            "path": "/dev/ttyMOD3",
+            "poll_interval": 10,
+            "stop_bits": 2
+        },
+        {
+            "address": "192.168.0.12",
+            "port": 502,
+            "port_type": "modbus tcp",
+            "devices": [{
+                "slave_id": "1",
+                "device_type": "UNPACKER_SENSOR",
+                "enabled": true,
+                "id": "man_x",
+                "name": "man_x",
+                "poll_interval": 1,
+                "setup": [{
+                    "address": "123",
+                    "title": "blablablsa",
+                    "value": "24"
+                }]
+            }],
+            "enabled": true,
+            "connection_timeout_ms": 5000,
+            "guard_interval_us": 0,
+            "poll_interval": 1,
+            "response_timeout_ms": 500
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "device_type": "UNPACKER_ACTUATOR",
+    "device": {
+        "name": "UNPACKER_ACTUATOR",
+        "id": "UNPACKER_ACTUATOR",
+        "protocol": "modbus_io",
+        "stride": 1000,
+        "shift": 500,
+        "max_read_registers": 0,
+        "response_timeout_ms": 40,
+        "frame_timeout_ms": 8,
+        "channels": [{
+                "name": "tray_pusher",
+                "reg_type": "coil",
+                "address": 0,
+                "type": "switch"
+            },
+            {
+                "name": "vacuum",
+                "reg_type": "coil",
+                "address": 1,
+                "type": "switch"
+            },
+            {
+                "name": "air",
+                "reg_type": "coil",
+                "address": 2,
+                "type": "switch"
+            },
+            {
+                "name": "gripper_vacuum",
+                "reg_type": "coil",
+                "address": 3,
+                "type": "switch"
+            },
+            {
+                "name": "gripper_air",
+                "reg_type": "coil",
+                "address": 4,
+                "type": "switch"
+            }
+        ]
+    }
+}
